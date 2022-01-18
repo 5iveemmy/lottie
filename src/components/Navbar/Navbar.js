@@ -35,12 +35,7 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks
-                  to="/"
-                  inputColor="#233348"
-                  opaci="normal"
-                  weight="bold"
-                >
+                <NavLinks to="/" boldColor noFade heavy>
                   Product
                 </NavLinks>
               </NavItem>

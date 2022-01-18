@@ -102,9 +102,9 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: ${(props) => props.inputColor || "#7D7987"};
-  opacity: ${(props) => props.opaci || "0.5"};
-  font-weight: ${(props) => props.weight || "400"};
+  color: ${({ boldColor }) => (boldColor ? "#233348" : "#7D7987")};
+  opacity: ${({ noFade }) => (noFade ? "normal" : "0.5")};
+  font-weight: ${({ heavy }) => (heavy ? "bold" : "400")};
   display: flex;
   align-items: center;
   text-decoration: none;
