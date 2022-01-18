@@ -12,7 +12,7 @@ import {
   OrderBtn,
 } from "./BikeKit.elements";
 
-const MidBikes = ({ src, alt, price, BikeName, padding }) => {
+const MidBikes = ({ src, alt, price, BikeName }) => {
   return (
     <>
       <Uni>

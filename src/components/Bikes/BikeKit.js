@@ -1,9 +1,22 @@
 import React from "react";
 import { Container } from "../../globalStyles";
-import { BikeKitWrap, BikeKits } from "./BikeKit.elements";
+import {
+  BikeKitWrap,
+  BikeKits,
+  Arrows,
+  LeftIcon,
+  LeftArrow,
+  RightArrow,
+  RightIcon,
+  ArrowWrap,
+  OtherBikes,
+  OtherWrap,
+} from "./BikeKit.elements";
 import universal from "../../images/universal.png";
 import brampton from "../../images/brampton.png";
 import MidBikes from "./MidBikes";
+import small from "../../images/small.png";
+import SmallBikes from "./SmallBikes";
 
 const BikeKit = () => {
   return (
@@ -30,7 +43,29 @@ const BikeKit = () => {
               BikeName="Additional eBike Kit"
             />
           </BikeKitWrap>
+          <Arrows>
+            <ArrowWrap>
+              <LeftArrow>
+                <LeftIcon></LeftIcon>
+              </LeftArrow>
+            </ArrowWrap>
+            <ArrowWrap>
+              <RightArrow>
+                <RightIcon></RightIcon>
+              </RightArrow>
+            </ArrowWrap>
+          </Arrows>
         </BikeKits>
+
+        <OtherBikes>
+          <OtherWrap>
+            <SmallBikes src={small} bikeName="Hybrid Bikes" />
+            <SmallBikes src={small} bikeName="Fixie Bikes" />
+            <SmallBikes src={small} bikeName="Folding Bikes" />
+            <SmallBikes src={small} bikeName="Mount Bikes" />
+            <SmallBikes src={small} bikeName="City Bikes" />
+          </OtherWrap>
+        </OtherBikes>
       </Container>
     </>
   );
