@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Container } from "../../globalStyles";
-
+import Lottie from "react-lottie";
+import animationData from "../../lotties/helmet.json";
 import {
   Dummy,
   Electric,
@@ -14,19 +15,16 @@ import {
   SearchIcon,
   Your,
 } from "./HeroSection.elements";
-// import lottie from "lottie-web";
 
 const HeroSection = () => {
-  // const container = useRef(null);
-  // useEffect(() => {
-  //   lottie.loadAnimation({
-  //     container: container.current,
-  //     renderer: "svg",
-  //     loop: true,
-  //     autoplay: true,
-  //     animationData: require("../../lotties/Header.json"),
-  //   });
-  // }, []);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <>
@@ -52,7 +50,10 @@ const HeroSection = () => {
                 </FormWrap>
               </Form>
             </Left>
-            {/* <div className="container" ref={container}></div> */}
+
+            <div>
+              <Lottie options={defaultOptions} height={400} width={400} />
+            </div>
           </HeroSectContainer>
         </Container>
       </HeroSect>

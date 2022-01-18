@@ -1,5 +1,5 @@
 import React from "react";
-import { BikeKit, HeroSection, Navbar } from "./components";
+import { BikeKit, Footer, HeroSection, Navbar } from "./components";
 import GlobalStyle from "./globalStyles";
 import { BrowserRouter } from "react-router-dom";
 import Hybrid from "./components/Bikes/Hybrid";
@@ -12,6 +12,7 @@ function App() {
       <HeroSection />
       <BikeKit />
       <Hybrid />
+      <Footer />
     </BrowserRouter>
   );
 }

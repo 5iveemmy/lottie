@@ -28,7 +28,8 @@ export const NavLogo = styled.div`
 `;
 
 export const NavIcon = styled.div`
-  background-color: #ffbd37;
+  background-color: ${({ iconDivFooter }) =>
+    iconDivFooter ? "#fff" : "#ffbd37"};
   padding: 2px 9px;
   display: flex;
   justify-content: center;
@@ -38,11 +39,11 @@ export const NavIcon = styled.div`
 export const Ebike = styled.p`
   font-size: 24px;
   font-weight: 700;
-  color: #233348;
+  color: ${({ forFooter }) => (forFooter ? "#fff" : "#233348")};
 `;
 
 export const NavIconB = styled.p`
-  color: white;
+  color: ${({ Bfooter }) => (Bfooter ? "#FFC44B" : "#fff")};
   font-weight: 700;
   font-size: 26px;
   margin: 0;
