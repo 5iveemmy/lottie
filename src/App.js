@@ -12,7 +12,7 @@ function App() {
       <HeroSection />
       <BikeKit />
       <Hybrid />
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

@@ -1,18 +1,33 @@
 import styled from "styled-components";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
+export const ForVector = styled.div`
+  position: absolute;
+  top: 44rem;
+  right: 60rem;
+  opacity: 0.5;
+`;
+
+export const VectorImg = styled.img``;
+
 export const BikeKits = styled.div``;
 
 export const BikeKitWrap = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Uni = styled.div`
+  z-index: 10;
   background-color: #fff;
   border-radius: 20px;
   padding: 10px;
-  width: 32%;
+  margin: 20px auto;
+  width: 23rem;
   box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
 `;
 
@@ -25,6 +40,7 @@ export const UniHead = styled.h3`
 export const BikeText = styled.div`
   display: flex;
   justify-content: space-between;
+  padding-top: ${({ top }) => (top ? "20px" : "normal")};
 `;
 
 export const Price = styled.span``;
@@ -35,6 +51,7 @@ export const PriceTag = styled.p`
 
 export const Num = styled.p`
   color: #233348;
+  font-weight: 700;
 `;
 
 export const Order = styled.div``;
@@ -55,7 +72,9 @@ export const OrderBtn = styled.button`
   }
 `;
 
-export const BikeImg = styled.img``;
+export const BikeImg = styled.img`
+  margin: auto;
+`;
 
 export const Arrows = styled.div`
   display: flex;
@@ -100,16 +119,22 @@ export const RightIcon = styled(BsArrowRight)`
 `;
 
 export const OtherBikes = styled.div`
-  padding-top: 50px;
+  padding-top: 8rem;
   padding-bottom: 50px;
 `;
 
 export const OtherWrap = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `;
 
-export const SmallBike = styled.div``;
+export const SmallBike = styled.div`
+  margin: 20px auto;
+`;
 
 export const SmallWrap = styled.div`
   background-color: #fff;
@@ -128,11 +153,14 @@ export const BikeName = styled.p`
   color: #233348;
 `;
 
+export const LottieWrap = styled.div``;
+
 export const ForHybrid = styled.div``;
 
 export const HybridWrap = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const HybridBikes = styled.div`

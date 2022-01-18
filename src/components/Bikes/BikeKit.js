@@ -11,16 +11,22 @@ import {
   ArrowWrap,
   OtherBikes,
   OtherWrap,
+  ForVector,
+  VectorImg,
 } from "./BikeKit.elements";
 import universal from "../../images/universal.png";
 import brampton from "../../images/brampton.png";
 import MidBikes from "./MidBikes";
 import small from "../../images/small.png";
+import vector from "../../images/vector.png";
 import SmallBikes from "./SmallBikes";
 
 const BikeKit = () => {
   return (
     <>
+      <ForVector>
+        <VectorImg src={vector}></VectorImg>
+      </ForVector>
       <Container>
         <BikeKits>
           <BikeKitWrap>

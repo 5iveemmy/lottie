@@ -5,13 +5,32 @@ export const HeroSect = styled.div`
   cursor: pointer;
 `;
 
-// Dummy, Electric , Your, Left
-
 export const HeroSectContainer = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and (max-width: 960px) {
+    flex-wrap: wrap;
+  }
 `;
 
-export const Left = styled.div``;
+export const Left = styled.div`
+  width: 51%;
+
+  @media screen and (max-width: 960px) {
+    width: auto;
+  }
+`;
+
+export const LeftHeader = styled.div`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const Right = styled.div``;
 
 export const Your = styled.p`
   font-size: 48px;
@@ -25,12 +44,23 @@ export const Electric = styled.p`
 
 export const Dummy = styled.p`
   color: #7d7987;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 58%;
+  line-height: 2;
+  font-size: 18px;
+
+  @media screen and (max-width: 960px) {
+    width: auto;
+  }
 `;
 
 export const Form = styled.form``;
 
 export const FormWrap = styled.div`
   position: relative;
+  width: 400px;
+  display: flex;
 `;
 
 export const FormInput = styled.input`
@@ -51,8 +81,8 @@ export const SearchIcon = styled(AiOutlineSearch)`
 export const FindBtn = styled.button`
   color: #233348;
   position: absolute;
-  left: 42%;
-  top: 14%;
+  right: 0.45rem;
+  top: 0.4rem;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;

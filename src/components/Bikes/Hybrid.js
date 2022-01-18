@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  BikeText,
   ForHybrid,
   HybridBikes,
   HybridBikesWrap,
@@ -9,23 +10,52 @@ import {
   HybridHead,
   HybridPara,
   HybridWrap,
+  LottieWrap,
+  Num,
+  Order,
+  OrderBtn,
+  Price,
+  PriceTag,
+  Uni,
+  UniWrap,
 } from "./BikeKit.elements";
-import MidBikes from "./MidBikes";
-import universal from "../../images/universal.png";
+// import MidBikes from "./MidBikes";
+// import universal from "../../images/universal.png";
 import Biker from "./Biker";
+import Lottie from "react-lottie";
+import animationData from "../../lotties/rider.json";
 
 const Hybrid = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <>
       <HybridContainer>
         <ForHybrid>
           <HybridWrap>
-            <MidBikes
-              src={universal}
-              alt={"Universal Bike"}
-              price="$750.00"
-              BikeName="Universal eBike Kit"
-            />
+            <Uni>
+              <UniWrap>
+                <LottieWrap>
+                  <Lottie options={defaultOptions} height={300} width={300} />
+                </LottieWrap>
+                <BikeText top>
+                  <Price>
+                    <PriceTag>Price</PriceTag>
+                    <Num>$750</Num>
+                  </Price>
+                  <Order>
+                    <OrderBtn>Order</OrderBtn>
+                  </Order>
+                </BikeText>
+              </UniWrap>
+            </Uni>
             <HybridBikes>
               <HybridBikesWrap>
                 <HybridHead> Hybrid Bikes</HybridHead>

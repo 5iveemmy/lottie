@@ -12,6 +12,8 @@ import {
   HeroSect,
   HeroSectContainer,
   Left,
+  LeftHeader,
+  Right,
   SearchIcon,
   Your,
 } from "./HeroSection.elements";
@@ -32,8 +34,10 @@ const HeroSection = () => {
         <Container>
           <HeroSectContainer>
             <Left>
-              <Your>Your Bike</Your>
-              <Electric>Electric Update</Electric>
+              <LeftHeader>
+                <Your>Your Bike</Your>
+                <Electric>Electric Update</Electric>
+              </LeftHeader>
               <Dummy>
                 Dummy text progressive and affordable healthcare, accessible on
                 mobile and onine for everyone
@@ -51,9 +55,9 @@ const HeroSection = () => {
               </Form>
             </Left>
 
-            <div>
+            <Right>
               <Lottie options={defaultOptions} height={400} width={400} />
-            </div>
+            </Right>
           </HeroSectContainer>
         </Container>
       </HeroSect>
