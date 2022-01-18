@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection, Navbar } from "./components";
+import { BikeKit, HeroSection, Navbar } from "./components";
 import GlobalStyle from "./globalStyles";
 import { BrowserRouter } from "react-router-dom";
 
@@ -9,6 +9,7 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <HeroSection />
+      <BikeKit />
     </BrowserRouter>
   );
 }

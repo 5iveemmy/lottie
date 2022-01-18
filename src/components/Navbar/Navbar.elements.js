@@ -7,9 +7,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   height: 8.5rem;
-  /* background-color: red; */
   top: 0;
   z-index: 999;
 `;

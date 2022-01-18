@@ -38,6 +38,7 @@ export const FormInput = styled.input`
   width: 400px;
   padding: 17px 40px;
   border: 0.5px solid #c2cfe0;
+  outline: none;
 `;
 
 export const SearchIcon = styled(AiOutlineSearch)`
