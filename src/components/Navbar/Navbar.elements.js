@@ -89,7 +89,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: 2px solid #ffbd37;
   }
 
   @media screen and (max-width: 960px) {
@@ -103,6 +103,8 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(Link)`
   color: ${(props) => props.inputColor || "#7D7987"};
+  opacity: ${(props) => props.opaci || "0.5"};
+  font-weight: ${(props) => props.weight || "400"};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -114,6 +116,7 @@ export const NavLinks = styled(Link)`
     padding: 2rem;
     width: 100%;
     display: table;
+    opacity: 1;
 
     &:hover {
       color: #4b59f7;
