@@ -185,3 +185,84 @@ export const HybridButton = styled.button`
     transition: 0.5s ease-in-out;
   }
 `;
+
+/* Bikers */
+
+export const What = styled.div`
+  padding-top: 100px;
+  color: #fff;
+`;
+
+export const WhatWrap = styled.div`
+  background-color: #fcb72b;
+  padding: 70px 200px;
+  border-radius: 10px;
+`;
+
+export const WhatHead = styled.div`
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+`;
+
+export const BikerDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const BikerImgDiv = styled.div`
+  padding-top: 20px;
+  padding-right: 50px;
+  text-align: center;
+`;
+
+export const BikerImg = styled.img`
+  border-radius: 50%;
+  border: 4px solid #fff;
+`;
+
+export const BikerName = styled.p`
+  font-weight: 700;
+`;
+
+export const BikerTag = styled.span`
+  opacity: 85%;
+`;
+
+export const BikerText = styled.p`
+  width: 50%;
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 18px;
+`;
+
+export const DotsWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  align-items: center;
+`;
+
+export const Dots = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 90px;
+`;
+
+export const Dot = styled.p`
+  background-color: #ffbe3b;
+  border-radius: 50%;
+  opacity: ${({ noFade }) => (noFade ? "normal" : "0.3")};
+  height: 10px;
+  width: 10px;
+  padding-right: 10px;
+`;
+
+export const DotArrow = styled(BsArrowRight)`
+  color: #ffbe3b;
+  font-size: 28px;
+  margin-left: 4rem;
+  cursor: pointer;
+`;
