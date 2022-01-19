@@ -14,9 +14,12 @@ import {
   WhatHead,
   WhatWrap,
   WhatContainer,
+  TiltDotDiv,
+  TiltDotImg,
 } from "./BikeKit.elements";
 
 import biker from "../../images/biker.png";
+import whiteDot from "../../images/whiteDot.png";
 
 const Biker = () => {
   return (
@@ -24,6 +27,9 @@ const Biker = () => {
       <What>
         <WhatContainer>
           <WhatWrap>
+            <TiltDotDiv>
+              <TiltDotImg src={whiteDot} />
+            </TiltDotDiv>
             <WhatHead>What our customer are saying</WhatHead>
             <BikerDiv>
               <BikerImgDiv>

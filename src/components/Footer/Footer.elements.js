@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const FooterDiv = styled.div`
   background-color: #fcb72b;
   color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
 `;
 
 export const FooterWrap = styled.div`
@@ -44,4 +47,10 @@ export const FooterLinks = styled.li`
   cursor: pointer;
   list-style: none;
   padding: 7px 0px;
+`;
+
+export const FooterDotDiv = styled.div``;
+
+export const FooterDotImg = styled.img`
+  position: absolute;
 `;

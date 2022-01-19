@@ -24,16 +24,22 @@ export const BikeKitWrap = styled.div`
 `;
 
 export const Uni = styled.div`
+  display: flex;
   z-index: 10;
   background-color: #fff;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   margin: 20px auto;
   width: 23rem;
   box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+  opacity: ${({ opacity }) => opacity};
 `;
 
-export const UniWrap = styled.div``;
+export const UniWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 
 export const UniHead = styled.h3`
   font-weight: 700;
@@ -42,7 +48,8 @@ export const UniHead = styled.h3`
 export const BikeText = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: ${({ top }) => (top ? "20px" : "normal")};
+  border-top: 0.5px solid #c2cfe0;
+  padding-top: 20px;
 `;
 
 export const Price = styled.span``;
@@ -155,7 +162,9 @@ export const BikeName = styled.p`
   color: #233348;
 `;
 
-export const LottieWrap = styled.div``;
+export const LottieWrap = styled.div`
+  padding-bottom: 20px;
+`;
 
 export const ForHybrid = styled.div``;
 
@@ -168,6 +177,7 @@ export const HybridWrap = styled.div`
 
 export const HybridBikes = styled.div`
   width: 50%;
+  z-index: 10;
 
   @media screen and (max-width: 1200px) {
     width: auto;
@@ -228,6 +238,13 @@ export const HybridButton = styled.button`
   }
 `;
 
+export const RightVectorDiv = styled.div`
+  position: absolute;
+  top: 96rem;
+  right: 0%;
+  opacity: 0.5;
+`;
+export const RightVectorImg = styled.img``;
 /* Bikers */
 
 export const What = styled.div`
@@ -245,8 +262,17 @@ export const WhatContainer = styled.div`
   }
 `;
 
+export const TiltDotDiv = styled.div`
+  position: absolute;
+  right: 3%;
+  bottom: 86%;
+`;
+
+export const TiltDotImg = styled.img``;
+
 export const WhatWrap = styled.div`
   background-color: #fcb72b;
+  position: relative;
   padding: 70px 160px;
   border-radius: 10px;
 

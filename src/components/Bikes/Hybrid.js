@@ -16,6 +16,8 @@ import {
   OrderBtn,
   Price,
   PriceTag,
+  RightVectorDiv,
+  RightVectorImg,
   Uni,
   UniWrap,
 } from "./BikeKit.elements";
@@ -24,6 +26,7 @@ import {
 import Biker from "./Biker";
 import Lottie from "react-lottie";
 import animationData from "../../lotties/rider.json";
+import rightVector from "../../images/right.png";
 
 const Hybrid = () => {
   const defaultOptions = {
@@ -74,6 +77,9 @@ const Hybrid = () => {
         </ForHybrid>
         <Biker />
       </HybridContainer>
+      <RightVectorDiv>
+        <RightVectorImg src={rightVector} />
+      </RightVectorDiv>
     </>
   );
 };

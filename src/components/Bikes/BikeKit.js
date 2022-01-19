@@ -46,6 +46,7 @@ const BikeKit = () => {
               src={brampton}
               alt={"Additional Bike"}
               price="$250.00"
+              lastItem
               BikeName="Additional eBike Kit"
             />
           </BikeKitWrap>

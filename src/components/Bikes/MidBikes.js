@@ -12,10 +12,10 @@ import {
   OrderBtn,
 } from "./BikeKit.elements";
 
-const MidBikes = ({ src, alt, price, BikeName }) => {
+const MidBikes = ({ src, lastItem, alt, price, BikeName }) => {
   return (
     <>
-      <Uni>
+      <Uni opacity={lastItem && "0.2"}>
         <UniWrap>
           <UniHead>{BikeName}</UniHead>
           <BikeImg src={src} alt={alt} />
@@ -24,7 +24,7 @@ const MidBikes = ({ src, alt, price, BikeName }) => {
               <PriceTag>Price</PriceTag>
               <Num>{price}</Num>
             </Price>
-            <Order top>
+            <Order>
               <OrderBtn>Order</OrderBtn>
             </Order>
           </BikeText>

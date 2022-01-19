@@ -5,17 +5,23 @@ import {
   BikeFooter,
   Company,
   FooterDiv,
+  FooterDotDiv,
+  FooterDotImg,
   FooterLinks,
   FooterLinksHeader,
   FooterPara,
   FooterWrap,
   Help,
 } from "./Footer.elements";
+import footerDot from "../../images/footerDot.png";
 
 const Footer = () => {
   return (
     <>
       <FooterDiv>
+        <FooterDotDiv>
+          <FooterDotImg src={footerDot} />
+        </FooterDotDiv>
         <Container>
           <FooterWrap>
             <BikeFooter>
