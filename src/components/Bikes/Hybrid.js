@@ -21,8 +21,6 @@ import {
   Uni,
   UniWrap,
 } from "./BikeKit.elements";
-// import MidBikes from "./MidBikes";
-// import universal from "../../images/universal.png";
 import Biker from "./Biker";
 import Lottie from "react-lottie";
 import animationData from "../../lotties/rider.json";

@@ -53,6 +53,10 @@ export const FooterDotDiv = styled.div`
   position: absolute;
   right: 1rem;
   bottom: 17rem;
+
+  @media screen and (max-width: 940px) {
+    bottom: 27rem;
+  }
 `;
 
 export const FooterDotImg = styled.img``;

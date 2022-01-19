@@ -6,6 +6,20 @@ export const ForVector = styled.div`
   top: 44rem;
   right: 60rem;
   opacity: 0.5;
+
+  @media screen and (max-width: 1200px) {
+    right: 43rem;
+    top: 60rem;
+  }
+
+  @media screen and (max-width: 860px) {
+    right: 32rem;
+    top: 67rem;
+  }
+
+  @media screen and (max-width: 860px) {
+    right: 18rem;
+  }
 `;
 
 export const VectorImg = styled.img``;
@@ -253,6 +267,23 @@ export const RightVectorDiv = styled.div`
   top: 96rem;
   right: 0%;
   opacity: 0.5;
+
+  @media screen and (max-width: 1200px) {
+    top: 147rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    top: 165rem;
+  }
+  @media screen and (max-width: 860px) {
+    top: 189rem;
+  }
+  @media screen and (max-width: 570px) {
+    top: 218rem;
+  }
+  /* @media screen and (max-width: 520px) {
+    top: 229rem;
+  } */
 `;
 export const RightVectorImg = styled.img``;
 /* Bikers */
@@ -350,6 +381,7 @@ export const DotsWrap = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
 `;
 
