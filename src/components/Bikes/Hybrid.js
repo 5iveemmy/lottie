@@ -62,8 +62,8 @@ const Hybrid = () => {
                 <HybridPara>
                   {" "}
                   Dummy Text progressive, and affordable healthcare, accessible
-                  on mobile and online for everyone. To us, it's <br /> not just
-                  work. We take pride <br /> in the solutions we deliver
+                  on mobile and online for everyone. To us, it's not just work.
+                  We take pride in the solutions we deliver
                 </HybridPara>
                 <HybridButtonDiv>
                   <HybridButton>Learn more</HybridButton>

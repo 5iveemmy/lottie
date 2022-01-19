@@ -161,10 +161,15 @@ export const HybridWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const HybridBikes = styled.div`
   width: 50%;
+
+  @media screen and (max-width: 1200px) {
+    width: auto;
+  }
 `;
 
 export const HybridBikesWrap = styled.div``;
@@ -173,12 +178,19 @@ export const HybridHead = styled.h3`
   font-weight: 700;
   font-size: 36px;
   padding-bottom: 25px;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 `;
 
 export const HybridPara = styled.p`
   color: #7d7987;
   line-height: 2;
   width: 80%;
+  @media screen and (max-width: 1200px) {
+    width: auto;
+  }
 `;
 
 export const HybridContainer = styled.div`
@@ -221,10 +233,24 @@ export const What = styled.div`
   color: #fff;
 `;
 
+export const WhatContainer = styled.div`
+  padding-left: 6rem;
+  padding-right: 6rem;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+`;
+
 export const WhatWrap = styled.div`
   background-color: #fcb72b;
-  padding: 70px 200px;
+  padding: 70px 160px;
   border-radius: 10px;
+
+  @media screen and (max-width: 850px) {
+    padding: 50px 50px;
+  }
 `;
 
 export const WhatHead = styled.div`
@@ -232,18 +258,30 @@ export const WhatHead = styled.div`
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 30px;
+  }
 `;
 
 export const BikerDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const BikerImgDiv = styled.div`
   padding-top: 20px;
   padding-right: 50px;
   text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    padding-right: 0px;
+  }
 `;
 
 export const BikerImg = styled.img`
@@ -260,10 +298,14 @@ export const BikerTag = styled.span`
 `;
 
 export const BikerText = styled.p`
-  width: 50%;
+  width: 80%;
   line-height: 1.8;
   font-weight: 400;
   font-size: 18px;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 20px;
+  }
 `;
 
 export const DotsWrap = styled.div`

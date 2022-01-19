@@ -10,6 +10,15 @@ export const FooterWrap = styled.div`
   justify-content: space-between;
   padding-left: 8rem;
   padding-right: 8rem;
+
+  @media screen and (max-width: 950px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 `;
 
 export const FooterPara = styled.p`
@@ -19,7 +28,7 @@ export const FooterPara = styled.p`
 `;
 
 export const BikeFooter = styled.div`
-  width: 40.8%;
+  width: 24rem;
 `;
 
 export const Company = styled.ul``;
