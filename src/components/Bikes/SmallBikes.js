@@ -1,10 +1,10 @@
 import React from "react";
 import { SmallBike, SmallWrap, SmallImg, BikeName } from "./BikeKit.elements";
 
-const SmallBikes = ({ src, alt, bikeName }) => {
+const SmallBikes = ({ src, alt, bikeName, firstItem, lastBike }) => {
   return (
-    <SmallBike>
-      <SmallWrap>
+    <SmallBike opacity={lastBike && "0.2"}>
+      <SmallWrap border={firstItem && "1px solid #fcb72b"}>
         <SmallImg src={src} alt={alt}></SmallImg>
       </SmallWrap>
       <BikeName>{bikeName}</BikeName>

@@ -28,11 +28,18 @@ export const Uni = styled.div`
   z-index: 10;
   background-color: #fff;
   border-radius: 20px;
+  cursor: pointer;
   padding: 20px;
   margin: 20px auto;
   width: 23rem;
   box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
   opacity: ${({ opacity }) => opacity};
+
+  &:hover {
+    transform: scale(1.06);
+    transition: all 0.4s ease-out;
+    color: #1c2237;
+  }
 `;
 
 export const UniWrap = styled.div`
@@ -99,11 +106,6 @@ export const LeftArrow = styled.div`
   border-radius: 50%;
   padding: 8px 12px;
   cursor: pointer;
-
-  /* &:hover {
-    background-color: #ffc857;
-    transition: 0.4s ease-in-out;
-  } */
 `;
 
 export const LeftIcon = styled(BsArrowLeft)`
@@ -143,14 +145,22 @@ export const OtherWrap = styled.div`
 
 export const SmallBike = styled.div`
   margin: 20px auto;
+  opacity: ${({ opacity }) => opacity};
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.06);
+    transition: all 0.4s ease-out;
+    color: #1c2237;
+  }
 `;
 
 export const SmallWrap = styled.div`
   background-color: #fff;
   padding: 10px 30px;
-  /* width: 20%; */
   box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
+  border: ${({ border }) => border};
 `;
 
 export const SmallImg = styled.img``;
@@ -361,6 +371,13 @@ export const Dot = styled.p`
 export const DotArrow = styled(BsArrowRight)`
   color: #ffbe3b;
   font-size: 28px;
-  margin-left: 4rem;
+  margin-left: 4.5rem;
   cursor: pointer;
+`;
+export const DotArrowLeft = styled(BsArrowLeft)`
+  color: #ffbe3b;
+  font-size: 28px;
+  margin-right: 4.5rem;
+  cursor: pointer;
+  opacity: 0.2;
 `;

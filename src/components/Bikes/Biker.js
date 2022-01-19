@@ -16,6 +16,7 @@ import {
   WhatContainer,
   TiltDotDiv,
   TiltDotImg,
+  DotArrowLeft,
 } from "./BikeKit.elements";
 
 import biker from "../../images/biker.png";
@@ -46,6 +47,7 @@ const Biker = () => {
           </WhatWrap>
         </WhatContainer>
         <DotsWrap>
+          <DotArrowLeft />
           <Dots>
             <Dot noFade />
             <Dot />

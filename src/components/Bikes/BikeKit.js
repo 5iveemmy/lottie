@@ -66,11 +66,11 @@ const BikeKit = () => {
 
         <OtherBikes>
           <OtherWrap>
-            <SmallBikes src={small} bikeName="Hybrid Bikes" />
+            <SmallBikes src={small} bikeName="Hybrid Bikes" firstItem />
             <SmallBikes src={small} bikeName="Fixie Bikes" />
             <SmallBikes src={small} bikeName="Folding Bikes" />
             <SmallBikes src={small} bikeName="Mount Bikes" />
-            <SmallBikes src={small} bikeName="City Bikes" />
+            <SmallBikes src={small} bikeName="City Bikes" lastBike />
           </OtherWrap>
         </OtherBikes>
       </Container>

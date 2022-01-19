@@ -49,8 +49,14 @@ export const FooterLinks = styled.li`
   padding: 7px 0px;
 `;
 
-export const FooterDotDiv = styled.div``;
-
-export const FooterDotImg = styled.img`
+export const FooterDotDiv = styled.div`
   position: absolute;
+  right: 1rem;
+  bottom: 17rem;
+`;
+
+export const FooterDotImg = styled.img``;
+
+export const DotRelative = styled.div`
+  position: relative;
 `;
