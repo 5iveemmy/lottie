@@ -10,7 +10,9 @@ export const ForVector = styled.div`
 
 export const VectorImg = styled.img``;
 
-export const BikeKits = styled.div``;
+export const BikeKits = styled.div`
+  padding-top: 50px;
+`;
 
 export const BikeKitWrap = styled.div`
   display: flex;

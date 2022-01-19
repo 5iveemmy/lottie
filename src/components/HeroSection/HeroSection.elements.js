@@ -3,6 +3,15 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 export const HeroSect = styled.div`
   cursor: pointer;
+  padding-bottom: 50px;
+`;
+
+export const ForDotss = styled.div`
+  position: relative;
+`;
+
+export const DotssImg = styled.img`
+  position: absolute;
 `;
 
 export const HeroSectContainer = styled.div`
@@ -24,6 +33,7 @@ export const Left = styled.div`
 `;
 
 export const LeftHeader = styled.div`
+  font-weight: 700;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -69,6 +79,10 @@ export const FormInput = styled.input`
   padding: 17px 40px;
   border: 0.5px solid #c2cfe0;
   outline: none;
+
+  &::placeholder {
+    color: #c2cfe0;
+  }
 `;
 
 export const SearchIcon = styled(AiOutlineSearch)`

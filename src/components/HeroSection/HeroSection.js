@@ -2,10 +2,13 @@ import React from "react";
 import { Container } from "../../globalStyles";
 import Lottie from "react-lottie";
 import animationData from "../../lotties/helmet.json";
+import dotss from "../../images/dotss.png";
 import {
+  DotssImg,
   Dummy,
   Electric,
   FindBtn,
+  ForDotss,
   Form,
   FormInput,
   FormWrap,
@@ -31,6 +34,9 @@ const HeroSection = () => {
   return (
     <>
       <HeroSect>
+        <ForDotss>
+          <DotssImg src={dotss} />
+        </ForDotss>
         <Container>
           <HeroSectContainer>
             <Left>
