@@ -5,7 +5,6 @@ export const ForVector = styled.div`
   position: absolute;
   top: 44rem;
   right: 60rem;
-  opacity: 0.5;
 
   @media screen and (max-width: 1200px) {
     right: 43rem;
@@ -266,7 +265,6 @@ export const RightVectorDiv = styled.div`
   position: absolute;
   top: 96rem;
   right: 0%;
-  opacity: 0.5;
 
   @media screen and (max-width: 1200px) {
     top: 147rem;
