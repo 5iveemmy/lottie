@@ -196,6 +196,10 @@ export const HybridWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
 `;
 
 export const HybridBikes = styled.div`
@@ -236,8 +240,8 @@ export const HybridContainer = styled.div`
   margin-left: auto;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 45px;
+  padding-right: 45px;
 `;
 
 export const HybridButtonDiv = styled.div`
@@ -273,7 +277,7 @@ export const RightVectorDiv = styled.div`
   @media screen and (max-width: 960px) {
     top: 165rem;
   }
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 840px) {
     top: 189rem;
   }
   @media screen and (max-width: 570px) {

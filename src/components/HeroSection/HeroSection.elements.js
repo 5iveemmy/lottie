@@ -8,6 +8,10 @@ export const HeroSect = styled.div`
 
 export const ForDotss = styled.div`
   position: relative;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const DotssImg = styled.img`
@@ -28,7 +32,7 @@ export const Left = styled.div`
   width: 51%;
 
   @media screen and (max-width: 960px) {
-    width: auto;
+    width: 100%;
   }
 `;
 
@@ -71,11 +75,15 @@ export const FormWrap = styled.div`
   position: relative;
   width: 400px;
   display: flex;
+
+  @media screen and (max-width: 475px) {
+    width: 320px;
+  }
 `;
 
 export const FormInput = styled.input`
   border-radius: 100px;
-  width: 400px;
+  width: 100%;
   padding: 17px 40px;
   border: 0.5px solid #c2cfe0;
   outline: none;

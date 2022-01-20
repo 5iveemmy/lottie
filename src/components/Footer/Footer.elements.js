@@ -11,8 +11,8 @@ export const FooterDiv = styled.div`
 export const FooterWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 
   @media screen and (max-width: 950px) {
     flex-wrap: wrap;
@@ -54,8 +54,8 @@ export const FooterDotDiv = styled.div`
   right: 1rem;
   bottom: 17rem;
 
-  @media screen and (max-width: 940px) {
-    bottom: 27rem;
+  @media screen and (max-width: 960px) {
+    display: none;
   }
 `;
 
